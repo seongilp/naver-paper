@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+import sys
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import time
@@ -13,7 +14,7 @@ campaign_links += ppomppu.find_naver_campaign_links()
 
 if(campaign_links == []):
     print("모든 링크를 방문했습니다.")
-    exit()
+    sys.exit()
 
 # 크롬 드라이버 옵션 설정
 chrome_options = webdriver.ChromeOptions()
