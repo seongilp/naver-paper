@@ -1,4 +1,3 @@
-import time
 import requests
 import uuid
 import re
@@ -6,8 +5,6 @@ import rsa
 import lzstring
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
 
 
 def naver_style_join(elements):
